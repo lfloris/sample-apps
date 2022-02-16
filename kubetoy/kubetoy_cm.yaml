@@ -1,0 +1,7 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: kubetoy-configmap-files
+  namespace: kubetoy
+data:
+  config.json: '{ "default": "123" }'
