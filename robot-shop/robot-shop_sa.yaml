@@ -1,0 +1,8 @@
+
+# Source: robot-shop/templates/serviceaccount.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: robot-shop
+  namespace: robot-shop
+ ---

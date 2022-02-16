@@ -1,0 +1,17 @@
+
+# Source: robot-shop/templates/mongodb-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: robot-shop
+    service: mongodb
+  name: mongodb
+spec:
+  ports:
+  - name: mongo
+    port: 27017
+    targetPort: 27017
+  selector:
+    service: mongodb
+ ---

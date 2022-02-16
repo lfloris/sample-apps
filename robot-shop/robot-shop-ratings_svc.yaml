@@ -1,0 +1,17 @@
+
+# Source: robot-shop/templates/ratings-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: ratings
+  labels:
+    app: robot-shop
+    service: ratings
+spec:
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
+  selector:
+    service: ratings
+ ---

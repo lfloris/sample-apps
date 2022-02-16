@@ -1,0 +1,16 @@
+
+# Source: robot-shop/templates/clusterrole.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: robot-shop
+rules:
+- apiGroups:
+  - policy
+  resourceNames:
+  - robot-shop
+  resources:
+  - podsecuritypolicies
+  verbs:
+  - use
+ ---
