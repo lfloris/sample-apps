@@ -2,7 +2,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: bookinfo-create-load
-  namespace: default
   labels:
       app: bookinfo-create-load
 spec:
